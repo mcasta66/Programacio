@@ -7,7 +7,7 @@ public class Vectores {
 	public static void leer(int[] vector) {
 //Leer vector
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Introduce " + N + " n&uacute;meros");
+		System.out.println("Introduce " + N + " numeros");
 
 		for (int i = 0; i < vector.length; i++) {
 			vector[i] = sc.nextInt();
