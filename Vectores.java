@@ -7,7 +7,7 @@ public class Vectores {
 	public static void leer(int[] vector) {
 //Leer vector
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Introduce " + N + " números");
+		System.out.println("Introduce " + N + " n&uacute;meros");
 
 		for (int i = 0; i < vector.length; i++) {
 			vector[i] = sc.nextInt();
@@ -30,6 +30,6 @@ public class Vectores {
 		System.out.println("La suma es " + suma);
 
 		leer(v2);
-		System.out.println("Adéu!");
+		System.out.println("AdÃ©u!");
 	}
 }
