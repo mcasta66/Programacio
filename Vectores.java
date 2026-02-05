@@ -5,7 +5,7 @@ public class Vectores {
 	final static int N = 10;
 
 	public static void leer(int[] vector) {
-//Leer vector
+		//Leer vector
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce " + N + " numeros");
 
@@ -13,7 +13,16 @@ public class Vectores {
 			vector[i] = sc.nextInt();
 		}
 	}
-
+	
+	public static int sumar(int[] vector) {
+		// Calcular suma
+		int suma = 0;
+		for (int i = 0; i < N; i++) {
+			suma = suma + vector[i];
+		}
+		return suma;
+	}
+	
 	public static void main(String[] args) {
 
 		int i;
@@ -22,14 +31,12 @@ public class Vectores {
 		v2 = new int[5];
 
 		leer(v);
-		// Calcular suma
-		int suma = 0;
-		for (i = 0; i < N; i++) {
-			suma = suma + v[i];
-		}
-		System.out.println("La suma es " + suma);
+
+		int res = sumar(v);
+		System.out.println("La suma es " + res);
 
 		leer(v2);
 		System.out.println("Adéu!");
 	}
 }
+
